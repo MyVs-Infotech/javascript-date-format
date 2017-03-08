@@ -1,9 +1,9 @@
 # javascript-date-format
-Purpose:
-Various date format function in javascript.
-=>	Release-1 Feature
+##Purpose:
+####Various date format function in javascript.
+#####Release-1 Feature
 	-	Date Format Prototype
-=>	Supported Formats
+#####Supported Formats
 		1.	dd-mm-yyyy
 		2.	mm-dd-yyyy
 		3.	yyyy-mm-dd
@@ -15,10 +15,10 @@ Various date format function in javascript.
 		9.	yyyy/dd/mm
 		10.	dd/mm/yyyy hh:mm
 
-=>	How to Install
-	1. Import javascript library named "myvs-date-format.js"
+#####How to Install
+1. Import javascript library named "myvs-date-format.js"
 		<script src="[PATH]/myvs-date-format.js"></script>
-	2. Call method in code where you require date format
+2. Call method in code where you require date format
 	
 		new Date().toMyVsFormat("dd-mm-yyyy");
 		This will return current date in "dd-mm-yyyy" format.
@@ -26,6 +26,3 @@ Various date format function in javascript.
 		var date = new Date(1989, 9, 28);
 		date.toMyVsFormat("dd-mm-yyyy");
 		This will return specified date in "dd-mm-yyyy" format.
-		
--------------------------END------------------------
-
