@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="./myvs-date-format.js"></script>
+    <script>
+        window.onload = function() {
+            document.getElementById("1").innerHTML = new Date().toMyVsFormat("dd-mm-yyyy");
+            document.getElementById("2").innerHTML = new Date().toMyVsFormat("mm-dd-yyyy");
+            document.getElementById("3").innerHTML = new Date().toMyVsFormat("yyyy-mm-dd");
+            document.getElementById("4").innerHTML = new Date().toMyVsFormat("yyyy-dd-mm");
+            document.getElementById("5").innerHTML = new Date().toMyVsFormat("dd-mm-yyyy hh:mm");
+            document.getElementById("6").innerHTML = new Date().toMyVsFormat("dd/mm/yyyy");
+            document.getElementById("7").innerHTML = new Date().toMyVsFormat("mm/dd/yyyy");
+            document.getElementById("8").innerHTML = new Date().toMyVsFormat("yyyy/mm/dd");
+            document.getElementById("9").innerHTML = new Date().toMyVsFormat("yyyy/dd/mm");
+            document.getElementById("10").innerHTML = new Date().toMyVsFormat("dd/mm/yyyy hh:mm");
+            var date = new Date(1989, 9, 28);
+            document.getElementById("11").innerHTML = date.toMyVsFormat("dd-mm-yyyy");
+        }
+    </script>
+</head>
+
+<body>
+    <table border="1" style="margin:auto;">
+        <tr>
+            <th>SN</th>
+            <th>Format</th>
+            <th>Code</th>
+            <th>Output</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>DD-MM-YYYY<br/>dd-mm-yyyy</td>
+            <td>
+                new Date().toMyVsFormat("DD-MM-YYYY")<br/> new Date().toMyVsFormat("dd-mm-yyyy")
+            </td>
+            <td id="1"></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>MM-DD-YYYY<br/>mm-dd-yyyy</td>
+            <td>
+                new Date().toMyVsFormat("MM-DD-YYYY")<br/> new Date().toMyVsFormat("mm-dd-yyyy")
+            </td>
+            <td id="2"></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>YYYY-MM-DD<br/>yyyy-mm-dd</td>
+            <td>
+                new Date().toMyVsFormat("YYYY-MM-DD")<br/> new Date().toMyVsFormat("yyyy-mm-dd")
+            </td>
+            <td id="3"></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>YYYY-DD-MM<br/>yyyy-dd-mm</td>
+            <td>
+                new Date().toMyVsFormat("YYYY-DD-MM")<br/> new Date().toMyVsFormat("yyyy-dd-mm")
+            </td>
+            <td id="4"></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>DD-MM-YYYY HH:MM<br/>dd-mm-yyyy hh:mm</td>
+            <td>
+                new Date().toMyVsFormat("DD-MM-YYYY HH:MM")<br/> new Date().toMyVsFormat("dd-mm-yyyy hh:mm")
+            </td>
+            <td id="5"></td>
+        </tr>
+
+        <tr>
+            <td>6</td>
+            <td>DD/MM/YYYY<br/>dd/mm/yyyy</td>
+            <td>
+                new Date().toMyVsFormat("DD/MM/YYYY")<br/> new Date().toMyVsFormat("dd/mm/yyyy")
+            </td>
+            <td id="6"></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>MM/DD/YYYY<br/>mm/dd/yyyy</td>
+            <td>
+                new Date().toMyVsFormat("MM/DD/YYYY")<br/> new Date().toMyVsFormat("mm/dd/yyyy")
+            </td>
+            <td id="7"></td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>YYYY/MM/DD<br/>yyyy/mm/dd</td>
+            <td>
+                new Date().toMyVsFormat("YYYY/MM/DD")<br/> new Date().toMyVsFormat("yyyy/mm/dd")
+            </td>
+            <td id="8"></td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>YYYY/DD/MM<br/>yyyy/dd/mm</td>
+            <td>
+                new Date().toMyVsFormat("YYYY/DD/MM")<br/> new Date().toMyVsFormat("yyyy/dd/mm")
+            </td>
+            <td id="9"></td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>DD/MM/YYYY HH:MM<br/>dd/mm/yyyy hh:mm</td>
+            <td>
+                new Date().toMyVsFormat("DD/MM/YYYY HH:MM")<br/> new Date().toMyVsFormat("dd/mm/yyyy hh:mm")
+            </td>
+            <td id="10"></td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>Manual Date</td>
+            <td>
+                var date = new Date(1989, 9, 28);<br/>date.toMyVsFormat("dd-mm-yyyy");
+            </td>
+            <td id="11"></td>
+        </tr>
+    </table>
+</body>
+
+</html>
